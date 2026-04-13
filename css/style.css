@@ -108,13 +108,18 @@ textarea:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 18px;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #ffffff;
-  font-weight: 800;
-  letter-spacing: 0.04em;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.2);
+}
+
+.brand-mark svg {
+  width: 26px;
+  height: 26px;
+  display: block;
 }
 
 .site-brand strong {

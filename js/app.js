@@ -1,9 +1,9 @@
-const STORAGE_KEY = "meridyen-kpi-portal-v1";
+const STORAGE_KEY = "onlykpi-portal-v1";
 
 const defaultState = {
   settings: {
-    companyName: "Meridyen",
-    companyDomain: "meridyen.com",
+    companyName: "onlykpi",
+    companyDomain: "onlykpi.com",
     periodLabel: "2026 Q2",
   },
   currentUserEmail: "",
@@ -11,7 +11,7 @@ const defaultState = {
     {
       id: "admin-1",
       name: "Burcu Aksu",
-      email: "burcu.aksu@meridyen.com",
+      email: "burcu.aksu@onlykpi.com",
       role: "admin",
       title: "IK ve Performans Direktoru",
       department: "People & Culture",
@@ -19,7 +19,7 @@ const defaultState = {
     {
       id: "manager-1",
       name: "Ozan Kaya",
-      email: "ozan.kaya@meridyen.com",
+      email: "ozan.kaya@onlykpi.com",
       role: "manager",
       title: "Satis Muduru",
       department: "Sales",
@@ -27,7 +27,7 @@ const defaultState = {
     {
       id: "manager-2",
       name: "Elif Arslan",
-      email: "elif.arslan@meridyen.com",
+      email: "elif.arslan@onlykpi.com",
       role: "manager",
       title: "Operasyon Muduru",
       department: "Operations",
