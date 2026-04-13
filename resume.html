@@ -1,141 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A. Rahman Terzi - Resume</title>
+    <title>Meridyen KPI Kutuphanesi</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- PAGE HEADER -->
-    <div class="header">
-      <div class="title">
-        <span></span>
-        <h2>A. Rahman Terzi</h2>
-        <i>Data Analyst</i>
-      </div>
-
-      <div class="menu">
-        <a href="index.html">Home</a> | <a href="resume.html">Resume</a> |
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-    <!-- PAGE HEADER -->
-
-    <!-- PAGE CONTENT -->
-    <div class="content">
-      <h1><span></span> Resume</h1>
-
-      <!-- SUMMARY -->
-      <div class="section">
-        <h2>Summary</h2>
-
-        <div class="card">
-          <div class="left">
-            Freelance Data Analyst.
+    <header class="site-header">
+      <div class="site-brand">
+        <span class="brand-mark">MK</span>
+        <div>
+          <strong>Meridyen KPI Portal</strong>
+          <p>KPI kutuphanesi ve skor karti tasarim rehberi</p>
         </div>
       </div>
 
-      <!-- SUMMARY -->
+      <nav class="site-nav" aria-label="Ana menu">
+        <a href="index.html">Portal</a>
+        <a href="resume.html">KPI kutuphanesi</a>
+        <a href="contact.html">Canliya alma</a>
+      </nav>
+    </header>
 
-      <!-- WORK EXPERIENCE -->
-      <div class="section">
-        <h2>Work Experience</h2>
+    <main class="page-shell">
+      <section class="section-heading">
+        <span class="eyebrow">KPI mimarisi</span>
+        <h1>Admin'in yonetebilecegi KPI kutuphanesi ornekleri</h1>
+        <p>
+          Bu sayfa, admin panelinde tanimlayabileceginiz KPI tipleri icin
+          referans katalog sunar. Uretimde KPI'lar departmana, role ve doneme
+          gore daha da zenginlestirilebilir.
+        </p>
+      </section>
 
-        <div class="card">
-          <div class="left">
-            <h2>Freelance</h2>
-            <i>Web Developer | 2020 - Present</i>
-          </div>
-          <div class="right">
-            Working on several data projects.
-          </div>
+      <section class="resource-grid">
+        <article class="resource-card">
+          <span class="eyebrow">Satis</span>
+          <h3>Gelir ve hedef tutturma KPI'lari</h3>
+          <p>
+            Ciro gerceklesme, yeni musteri kazanimi, teklif donusum orani ve
+            tahsilat sureleri gibi rakamsal performans olcumleri.
+          </p>
+          <ul class="highlight-list">
+            <li>Ceyreklik ciro gerceklesme</li>
+            <li>Tekliften siparise donusum</li>
+            <li>Yeni musteri sayisi</li>
+            <li>Yenileme ve capraz satis orani</li>
+          </ul>
+        </article>
+
+        <article class="resource-card">
+          <span class="eyebrow">Operasyon</span>
+          <h3>Surec ve SLA KPI'lari</h3>
+          <p>
+            Surec uyumu, teslimat hizi, hata orani, bekleme suresi ve operasyonel
+            verimlilik takibi icin kullanilir.
+          </p>
+          <ul class="highlight-list">
+            <li>SLA uyum yuzdesi</li>
+            <li>Tekrar isleme dusen talep sayisi</li>
+            <li>Surec tamamlama suresi</li>
+            <li>Kalite kontrol uyumu</li>
+          </ul>
+        </article>
+
+        <article class="resource-card">
+          <span class="eyebrow">Insan ve ekip</span>
+          <h3>Yetkinlik ve davranissal KPI'lar</h3>
+          <p>
+            Liderlik, is birligi, ekip ici iletisim, gelisim planlari ve hedefe
+            baglilik gibi nitel alanlari olcebilir.
+          </p>
+          <ul class="highlight-list">
+            <li>360 geri bildirim puani</li>
+            <li>Gelisim aksiyonu tamamlama</li>
+            <li>Ekip ici bilgi paylasimi</li>
+            <li>Problem cozme hiz ve kalitesi</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <span class="eyebrow">Skor karti modeli</span>
+          <h2>Tek dosyada kullanabileceginiz KPI alanlari</h2>
+          <p>
+            Her personel dosyasinda KPI agirligi, hedefi, puani ve manager yorumu
+            birlikte tutulmalidir. Boylece admin tum gecmisi geriye donuk
+            izleyebilir.
+          </p>
         </div>
 
-      
-      <!-- WORK EXPERIENCE -->
+        <div class="two-column">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <span class="eyebrow">Zorunlu alanlar</span>
+                <h3>Her KPI kartinda bulunmali</h3>
+              </div>
+            </div>
 
-      <!-- EDUCATION -->
-      <div class="section">
-        <h2>Education</h2>
+            <div class="stack-list">
+              <div class="list-item">
+                <strong>KPI basligi ve kategori</strong>
+                <p class="meta">Role ve departmana gore filtrelenebilir yapi.</p>
+              </div>
+              <div class="list-item">
+                <strong>Agirlik (%)</strong>
+                <p class="meta">Genel skorun nasil hesaplanacagini belirler.</p>
+              </div>
+              <div class="list-item">
+                <strong>Hedef tanimi</strong>
+                <p class="meta">Manager'in neye gore puanlayacagini netlestirir.</p>
+              </div>
+              <div class="list-item">
+                <strong>Puan ve yorum</strong>
+                <p class="meta">1-5 skor ve nitel gozlem birlikte tutulur.</p>
+              </div>
+            </div>
+          </article>
 
-        <div class="card">
-          <div class="left">
-            <h2>Ankara University</h2>
-            <i>Labor Economics and Industrial Relations | 2004 - 2009</i>
-          </div>
-          <div class="right">
-            Studied economics, accounting, statics and law.
-          </div>
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <span class="eyebrow">Ileri seviye</span>
+                <h3>Canli ortamda eklenebilecek alanlar</h3>
+              </div>
+            </div>
+
+            <div class="stack-list">
+              <div class="list-item">
+                <strong>Kanit dosyalari</strong>
+                <p class="meta">PDF, Excel, sunum veya dashboard linkleri.</p>
+              </div>
+              <div class="list-item">
+                <strong>Kalibrasyon notu</strong>
+                <p class="meta">IK veya ust yonetim gozuyle son yorum katmani.</p>
+              </div>
+              <div class="list-item">
+                <strong>Onay akisi</strong>
+                <p class="meta">Manager -> Director -> HR seklinde ilerleyebilir.</p>
+              </div>
+              <div class="list-item">
+                <strong>Audit log</strong>
+                <p class="meta">Kimin neyi ne zaman degistirdigi izlenebilir.</p>
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-      <!-- EDUCATION -->
+      </section>
 
-      <!-- COURSES -->
-      <div class="section">
-        <h2>Courses</h2>
-
-        <div class="card">
-          <div class="left">
-            <h2>Techproeducation</h2>
-            <i>Data Science Bootcamp | 2022</i>
-          </div>
-          <div class="right">
-            Studied Python, Numpy, Pandas, Data Visualisation, Statics, SQL, Power BI, Tableau and developed
-            several projects. 
-          </div>
+      <section>
+        <div class="callout">
+          <h3>SimpleKPI benzeri yapida sonraki dogal genisleme</h3>
+          <p>
+            KPI sablonlari rol bazli hale getirilebilir, manager atamasi
+            organizasyon yapisindan otomatik cekilebilir ve donem sonunda toplu
+            raporlar uretilip yonetime sunulabilir.
+          </p>
         </div>
+      </section>
+    </main>
 
-
-      <!-- COURSES -->
-
-      <!-- TECHNICAL SKILLS -->
-      <div class="section">
-        <h2>Technical Skills</h2>
-
-        <div class="card">
-          <div class="left">
-            <h2>Data Science</h2>
-          </div>
-          <div class="right">
-            Python, Numpy, Pandas, Data Visualisation, Statics, SQL, Power BI, Tableau
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="left">
-            <h2>Tools, Apps, Platforms</h2>
-          </div>
-          <div class="right">Visual Studio DBeaver, PostgreSQL, MySql, Power BI, Tableau</div>
-        </div>
-      </div>
-      <!-- TECHNICAL SKILLS -->
-    </div>
-    <!-- PAGE CONTENT -->
-
-    <!-- PAGE FOOTER -->
-    <div class="footer">
+    <footer class="footer page-shell">
       <div>
-        <h3>Phone</h3>
-        <p>+90 533 257 69 35</p>
+        <strong>KPI kutuphanesi</strong>
+        <p>Departman bazli KPI tasarimi icin referans icerik</p>
       </div>
-
       <div>
-        <h3>Email</h3>
-        <p>a.rahmanterzi@gmail.com</p>
+        <strong>Portal</strong>
+        <p><a href="index.html">Canli demo portala don</a></p>
       </div>
-
       <div>
-        <h3>Follow Me</h3>
-        <p>Linkedin | Twitter</p>
+        <strong>Canliya alma</strong>
+        <p><a href="contact.html">SSO ve backend rehberini gor</a></p>
       </div>
-
-      <div>
-        <h3>Copyright</h3>
-        <p>2024 - A. Rahman Terzi</p>
-      </div>
-    </div>
-    <!-- PAGE FOOTER -->
+    </footer>
   </body>
 </html>

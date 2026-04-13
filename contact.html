@@ -1,115 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>John Doe - Resume</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Meridyen KPI Portal - Canliya Alma</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- PAGE HEADER -->
-    <div class="header">
-      <div class="title">
-        <span></span>
-        <h2>A. Rahman Terzi</h2>
-        <i>Data Analyst</i>
-      </div>
-
-      <div class="menu">
-        <a href="index.html">Home</a> | <a href="resume.html">Resume</a> |
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-    <!-- PAGE HEADER -->
-
-
-
-    <!-- PAGE CONTENT -->
-    <div class="content">
-      <h1><span></span> Contact</h1>
-
-      <div class="section">
-        <div class="card">
-          <div class="left">
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ATTENTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <!-- if you want to receive the emails sended by the following form and includes visitor's information, please replace john@due.com email address with yours -->
-            <!-- 👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇 -->
-            <form action="https://formsubmit.co/a.rahmanterzi@gmail.com" method="POST" target="_blank">
-              <div class="form-row">
-                <div>
-                  <label for="firstName">First Name</label>
-                </div>
-                <input type="text" name="firstName" id="firstName" />
-              </div>
-
-              <div class="form-row">
-                <div>
-                  <label for="lastName">Last Name</label>
-                </div>
-                <input type="text" name="lastName" id="lastName" />
-              </div>
-
-              <div class="form-row">
-                <div>
-                  <label for="email">Email</label>
-                </div>
-                <input type="text" name="email" id="email" />
-              </div>
-
-              <div class="form-row">
-                <div>
-                  <label for="phone">Phone</label>
-                </div>
-                <input type="text" name="phone" id="phone" />
-              </div>
-
-              <div class="form-row">
-                <div>
-                  <label for="message">Message</label>
-                </div>
-                
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-              </div>
-
-              <button type="submit">SEND</button>
-
-
-
-
-            </form>
-          </div>
+    <header class="site-header">
+      <div class="site-brand">
+        <span class="brand-mark">MK</span>
+        <div>
+          <strong>Meridyen KPI Portal</strong>
+          <p>Canliya alma ve kurumsal entegrasyon notlari</p>
         </div>
       </div>
-    </div>
-    <!-- PAGE CONTENT -->
 
+      <nav class="site-nav" aria-label="Ana menu">
+        <a href="index.html">Portal</a>
+        <a href="resume.html">KPI kutuphanesi</a>
+        <a href="contact.html">Canliya alma</a>
+      </nav>
+    </header>
 
+    <main class="page-shell">
+      <section class="section-heading">
+        <span class="eyebrow">Production plan</span>
+        <h1>Sirket ici kullanim icin bir sonraki adimlar</h1>
+        <p>
+          Hazirladigim demo tarayici tarafinda calisan bir MVP. Gercek hayatta
+          sirket maili ile guvenli giris, merkezi veri saklama ve denetlenebilir
+          kayit yapisi icin asagidaki mimariyi uygulamaniz gerekir.
+        </p>
+      </section>
 
-    <!-- PAGE FOOTER -->
-    <div class="footer">
+      <section class="resource-grid">
+        <article class="resource-card">
+          <span class="eyebrow">Authentication</span>
+          <h3>SSO ile sirket maili dogrulama</h3>
+          <p>
+            Microsoft Entra ID, Google Workspace veya Okta ile SSO kurarak yalnizca
+            sirket domaininizdeki kullanicilarin sisteme girmesini saglayin.
+          </p>
+          <ul class="highlight-list">
+            <li>Admin rolunu claim veya grup bazli atayin.</li>
+            <li>Manager rolunu sirket dizinindeki gruplardan besleyin.</li>
+            <li>Multi-factor authentication zorunlu olsun.</li>
+          </ul>
+        </article>
+
+        <article class="resource-card">
+          <span class="eyebrow">Data layer</span>
+          <h3>Veritabani ve audit log</h3>
+          <p>
+            KPI, kullanici, personel dosyasi, puan ve yorumlar veritabaninda
+            tutulmali; her hareket audit log ile izlenmelidir.
+          </p>
+          <ul class="highlight-list">
+            <li>PostgreSQL veya MS SQL kullanin.</li>
+            <li>Soft delete ve versiyonlama ekleyin.</li>
+            <li>Dosya atama ve skor degisikliklerini loglayin.</li>
+          </ul>
+        </article>
+
+        <article class="resource-card">
+          <span class="eyebrow">Operations</span>
+          <h3>Bildirim ve sure takibi</h3>
+          <p>
+            Manager'lara yeni atama ve son tarih hatirlatmalari icin e-posta veya
+            Teams/Slack entegrasyonu ekleyin.
+          </p>
+          <ul class="highlight-list">
+            <li>Yeni dosya atamasinda bildirim gitsin.</li>
+            <li>Son tarihe 3 gun kala otomatik hatirlatma yapin.</li>
+            <li>Tamamlanan dosyalar icin admin ozeti uretin.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="two-column">
+        <article class="panel">
+          <span class="eyebrow">Onerilen teknoloji</span>
+          <h3>Bu MVP'yi gercek urune donusturmek icin</h3>
+          <div class="stack-list">
+            <div class="list-item">
+              <strong>Frontend</strong>
+              <p class="meta">React veya Next.js ile rol bazli dashboard ve form deneyimi</p>
+            </div>
+            <div class="list-item">
+              <strong>Backend</strong>
+              <p class="meta">Node.js, .NET veya Django ile API, yetkilendirme ve audit log</p>
+            </div>
+            <div class="list-item">
+              <strong>Auth</strong>
+              <p class="meta">Entra ID / Google Workspace / Okta SSO</p>
+            </div>
+            <div class="list-item">
+              <strong>Database</strong>
+              <p class="meta">PostgreSQL, role mapping ve degerlendirme tablolari</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="callout">
+          <span class="eyebrow">MVP siniri</span>
+          <h3>Bu demoda neler var, neler yok?</h3>
+          <p>
+            Var: sirket domain kontrolu, admin/manager ayrimi, KPI tanimi,
+            personel dosyasi atama, puanlama ve genel skor hesaplama.
+          </p>
+          <p>
+            Yok: gercek SSO, sunucu tarafli yetkilendirme, veritabani, dosya
+            ekleri, mail bildirimi, raporlama ve HR sistem entegrasyonlari.
+          </p>
+        </article>
+      </section>
+
+      <section class="panel">
+        <span class="eyebrow">Roadmap</span>
+        <h3>Kurulum sirasiyla uygulanabilecek backlog</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div>
+              <strong>1. Kimlik dogrulama</strong>
+              <p class="meta">SSO, sirket domain policy ve rol esleme</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div>
+              <strong>2. Veri modeli</strong>
+              <p class="meta">KPI, period, evaluation, score, attachment, audit log</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div>
+              <strong>3. Is kurallari</strong>
+              <p class="meta">Sadece admin KPI yaratir, manager sadece kendine atanan dosyayi gorur</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div>
+              <strong>4. Raporlama</strong>
+              <p class="meta">Departman, manager ve personel bazli KPI trend ekranlari</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page-shell">
       <div>
-        <h3>Phone</h3>
-        <p>+90 533 257 69 35</p>
+        <strong>Canliya alma odagi</strong>
+        <p>SSO, veritabani, audit log ve bildirim katmani</p>
       </div>
 
       <div>
-        <h3>Email</h3>
-        <p>a.rahmanterzi@gmail.com</p>
+        <strong>Demo</strong>
+        <p>Portal deneyimi icin ana sayfaya geri donun</p>
       </div>
-
-      <div>
-        <h3>Follow Me</h3>
-        <p>Linkedin | Twitter</p>
-      </div>
-
-      <div>
-        <h3>Copyright</h3>
-        <p>2024 - A. Rahman Terzi</p>
-      </div>
-    </div>
-    <!-- PAGE FOOTER -->
+    </footer>
   </body>
 </html>
