@@ -1,84 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A. Rahman Terzi - Resume</title>
+    <title>onlykpi</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/app.js"></script>
   </head>
   <body>
-
-    <!-- PAGE HEADER -->
-    <div class="header">
-      <div class="title">
-        <span></span>
-        <h2>A. Rahman Terzi</h2>
-        <i>Data Analyst</i>
-      </div>
-
-      <div class="menu">
-        <a href="index.html" title="Ana sayfayı aç">Home</a> |
-        <a href="resume.html">Resume</a> |
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-    <!-- PAGE HEADER -->
-
-
-
-
-    <!-- PAGE CONTENT -->
-    <div class="content">
-      <div class="about">
-        <div class="my-photo">
-          <img
-            src="img/IMG_8496.jpeg"
-            alt="A. Rahman Terzi - Kişisel fotoğrafım"
-          />
+    <header class="site-header">
+      <div class="site-brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" class="rocket-icon" focusable="false">
+            <path d="M26 7c7 3 12 10 15 18L31 35 20 24l6-17Z" fill="currentColor" />
+            <circle cx="30" cy="19" r="3" fill="#2563eb" />
+            <path d="M18 25l5 5-8 3 3-8Z" fill="currentColor" />
+            <path d="M16 34c3-1 6 0 8 2-2 2-3 5-2 8-2-1-4-1-6 0 1-3 1-7 0-10Z" fill="#f59e0b" />
+          </svg>
+        </span>
+        <div>
+          <strong>onlykpi</strong>
+          <p>onlykpi.com - admin kontrollu kurum ici KPI sistemi</p>
         </div>
-        <div class="description">
-          <h1>A. Rahman Terzi</h1>
-          <p>
-            I'm a Data Analyst with 1 year of experience in data projects.
+      </div>
+
+      <nav class="site-nav" aria-label="Ana menu">
+        <a href="#hero">Genel bakis</a>
+        <a href="#workflow">Akis</a>
+        <a href="#portal">Portal</a>
+        <a href="resume.html">KPI kutuphanesi</a>
+        <a href="contact.html">Canliya alma</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">onlykpi.com</span>
+          <h1>onlykpi ile sirket maili tabanli, admin kontrollu KPI yonetimi</h1>
+          <p class="lead">
+            onlykpi; admin'in KPI tanimladigi, manager'lara personel dosyasi
+            yonlendirdigi ve manager'larin puanlama yaptigi tek akista calisan
+            bir portal sunar.
           </p>
-          <div class="toolbar">
-            <a href="resume.html">Resume</a><a href="contact.html">Contact</a>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#portal">Portali ac</a>
+            <a class="button ghost" href="#workflow">Akisi incele</a>
           </div>
+
+          <ul class="highlight-list">
+            <li>Sadece admin KPI tanimlar, manager hesaplarini yonetir ve dosya atar.</li>
+            <li>Manager kullanicilar yalnizca kendilerine yonlendirilen personel dosyalarini gorur.</li>
+            <li>Her dosya icin KPI bazli puan, yorum, durum ve genel skor takip edilir.</li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!-- PAGE CONTENT -->
 
+        <aside class="hero-panel">
+          <span class="eyebrow">Hazir demo kapsami</span>
+          <div class="metric-grid">
+            <article class="metric-card">
+              <strong>2 rol</strong>
+              <span>Admin + Manager ayrimi</span>
+            </article>
+            <article class="metric-card">
+              <strong>KPI kutuphanesi</strong>
+              <span>Admin tanimlar, personel dosyasina ekler</span>
+            </article>
+            <article class="metric-card">
+              <strong>Yonlendirme</strong>
+              <span>Her personel kaydi secilen manager'a atanir</span>
+            </article>
+            <article class="metric-card">
+              <strong>Skor takibi</strong>
+              <span>Taslak, devam eden ve tamamlanan degerlendirme akisi</span>
+            </article>
+          </div>
 
+          <div class="demo-accounts">
+            <p>Demo hesaplar</p>
+            <code>burcu.aksu@onlykpi.com - Admin</code>
+            <code>ozan.kaya@onlykpi.com - Manager</code>
+            <code>elif.arslan@onlykpi.com - Manager</code>
+          </div>
+        </aside>
+      </section>
 
+      <section id="workflow">
+        <div class="section-heading">
+          <span class="eyebrow">Isleyis</span>
+          <h2>Admin merkezli KPI degerlendirme akisi</h2>
+          <p>
+            Yapi, admin'in KPI repertuarini ve personel dosya dagitimini tek
+            merkezden yonetmesine; manager'larin ise yalnizca kendilerine dusen
+            degerlendirmeleri tamamlamasina odaklanir.
+          </p>
+        </div>
 
-    <!-- PAGE FOOTER -->
-    <div class="footer">
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <span class="step">01</span>
+            <h3>Kullanici ve roller</h3>
+            <p>
+              Admin, kullanici rollerini belirler. Sistemde yalnizca tanimli
+              admin ve manager hesaplari oturum acabilir.
+            </p>
+          </article>
+
+          <article class="workflow-card">
+            <span class="step">02</span>
+            <h3>KPI kutuphanesi</h3>
+            <p>
+              KPI basligi, hedefi, agirligi ve aciklamasi admin tarafinda
+              tanimlanir. Manager tarafinda yeni KPI olusturma yetkisi yoktur.
+            </p>
+          </article>
+
+          <article class="workflow-card">
+            <span class="step">03</span>
+            <h3>Personel dosyasi atama</h3>
+            <p>
+              Admin, personel unvani, donem, son tarih ve KPI secimini yaparak
+              ilgili manager'a degerlendirme dosyasi yollar.
+            </p>
+          </article>
+
+          <article class="workflow-card">
+            <span class="step">04</span>
+            <h3>Manager degerlendirmesi</h3>
+            <p>
+              Manager, her KPI icin puan ve yorum girer; taslak kaydedebilir
+              veya degerlendirmeyi tamamlayarak final skoru olusturur.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="eyebrow">Kontrol</span>
+            <h3>Admin icin tam hakimiyet</h3>
+            <p>
+              Manager listesi, kullanici yetkileri, KPI tanimlari ve tum dosya
+              yonlendirmeleri tek panelden yonetilir.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="eyebrow">Operasyon</span>
+            <h3>Manager icin sade kullanim</h3>
+            <p>
+              Manager'lar sadece kendi kuyruklarini, son tarihlerini ve
+              tamamladiklari degerlendirmeleri gorur.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="eyebrow">Uretim notu</span>
+            <h3>SSO ve backend'e acik yapi</h3>
+            <p>
+              Bu demo tarayici tarafinda localStorage ile calisir; Entra ID,
+              Google Workspace ya da Okta ile gercek kurumsal giris icin hazir
+              uyarlama notlari eklidir.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="portal">
+        <div class="section-heading">
+          <span class="eyebrow">Canli demo</span>
+          <h2>onlykpi demo</h2>
+          <p>
+            Asagidaki demo, rol bazli giris ve degerlendirme akisinin tamamini
+            tek sayfada calistirir. Uretim ortami icin gereken altyapi notlari
+            "Canliya alma" sayfasinda yer alir.
+          </p>
+        </div>
+
+        <noscript>
+          <div class="notice error">
+            Bu portali kullanmak icin tarayicida JavaScript etkin olmalidir.
+          </div>
+        </noscript>
+
+        <div class="portal-layout">
+          <aside class="login-card" id="loginCard">
+            <span class="eyebrow">Oturum ac</span>
+            <h3>Yetkili e-posta ile giris</h3>
+            <p class="meta">
+              Yalnizca tanimli admin ve manager hesaplari sisteme girebilir.
+            </p>
+
+            <form class="stacked-form" id="loginForm">
+              <label>
+                <span>E-posta adresi</span>
+                <input
+                  type="email"
+                  id="loginEmail"
+                  placeholder="ad.soyad@onlykpi.com"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+
+              <button class="button primary full-width" type="submit">
+                Giris yap
+              </button>
+            </form>
+
+            <div class="helper-block">
+              <strong>Hizli giris</strong>
+              <div class="chip-list" id="quickLoginButtons"></div>
+            </div>
+
+            <button class="button ghost full-width" id="resetDataButton" type="button">
+              Demo verisini sifirla
+            </button>
+            <p class="status-message" id="loginMessage" aria-live="polite"></p>
+          </aside>
+
+          <section class="dashboard-shell hidden" id="dashboardShell">
+            <div class="dashboard-topbar">
+              <div>
+                <span class="eyebrow">Aktif oturum</span>
+                <h3 id="sessionGreeting">Hos geldiniz</h3>
+                <p class="meta" id="sessionMeta"></p>
+              </div>
+
+              <div class="topbar-actions">
+                <button class="button ghost" id="logoutButton" type="button">
+                  Cikis yap
+                </button>
+              </div>
+            </div>
+
+            <div class="dashboard-grid">
+              <nav class="sidebar" id="sidebarNav" aria-label="Dashboard menu">
+                <button class="nav-item active" data-view="overview" type="button">
+                  Genel bakis
+                </button>
+                <button class="nav-item admin-only" data-view="managers" type="button">
+                  Manager kullanicilari
+                </button>
+                <button class="nav-item admin-only" data-view="kpis" type="button">
+                  KPI kutuphanesi
+                </button>
+                <button class="nav-item admin-only" data-view="files" type="button">
+                  Personel dosyalari
+                </button>
+                <button class="nav-item manager-only" data-view="queue" type="button">
+                  Degerlendirme kuyrugu
+                </button>
+                <button class="nav-item manager-only" data-view="history" type="button">
+                  Tamamlananlar
+                </button>
+              </nav>
+
+              <div class="view-content" id="viewContent"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page-shell">
       <div>
-        <h3>Phone</h3>
-        <p><a href="tel:+905332576935">+90 533 257 69 35</a></p>
+        <strong>onlykpi</strong>
+        <p>Admin kontrollu, manager odakli kurum ici KPI degerlendirme MVP'si</p>
       </div>
 
       <div>
-        <h3>Email</h3>
-        <p><a href="mailto:a.rahmanterzi@gmail.com">a.rahmanterzi@gmail.com</a></p>
+        <strong>Kapsam</strong>
+        <p>KPI tanimi, personel dosyasi atama, puanlama ve durum takibi</p>
       </div>
 
       <div>
-        <h3>Follow Me</h3>
-        <p>
-          <a href="http://linkedin.com" target="_blank">Linkedin</a> |
-          <a href="http://twitter.com" target="_blank">Twitter</a>
-        </p>
+        <strong>Sonraki adim</strong>
+        <p>SSO, veritabani, bildirim ve audit log icin canliya alma sayfasina bakin</p>
       </div>
-
-      <div>
-        <h3>Copyright</h3>
-        <p>2024 - A. Rahman Terzi</p>
-      </div>
-    </div>
-    <!-- PAGE FOOTER -->
-
+    </footer>
   </body>
 </html>
