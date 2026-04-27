@@ -32,6 +32,14 @@ const defaultState = {
       title: "Operasyon Muduru",
       department: "Operations",
     },
+    {
+      id: "manager-3",
+      name: "Can Ozturk",
+      email: "can.ozturk@gmail.com",
+      role: "manager",
+      title: "Pazarlama Muduru",
+      department: "Marketing",
+    },
   ],
   kpis: [
     {
@@ -210,15 +218,9 @@ function handleLogin(event) {
   event.preventDefault();
 
   const email = dom.loginEmail.value.trim().toLowerCase();
-  const companyDomain = state.settings.companyDomain.toLowerCase();
 
   if (!email) {
     setLoginMessage("Lutfen e-posta girin.");
-    return;
-  }
-
-  if (!email.endsWith(`@${companyDomain}`)) {
-    setLoginMessage(`Yalnizca @${companyDomain} uzantili sirket mailleri kabul edilir.`);
     return;
   }
 
@@ -469,10 +471,10 @@ function renderOverviewView() {
               </label>
 
               <label>
-                <span>Sirket domaini</span>
+                <span>Kurum domaini (opsiyonel)</span>
                 <input name="companyDomain" value="${escapeHtml(
                   state.settings.companyDomain
-                )}" required />
+                )}" />
               </label>
 
               <label>
@@ -600,9 +602,7 @@ function renderManagersView() {
             <div class="field-grid">
               <label>
                 <span>E-posta</span>
-                <input type="email" name="email" placeholder="ad.soyad@${
-                  state.settings.companyDomain
-                }" required />
+                <input type="email" name="email" placeholder="ad.soyad@email.com" required />
               </label>
               <label>
                 <span>Departman</span>
@@ -1221,11 +1221,6 @@ function submitSettings(form) {
 function submitManager(form) {
   const formData = new FormData(form);
   const email = String(formData.get("email")).trim().toLowerCase();
-
-  if (!email.endsWith(`@${state.settings.companyDomain}`)) {
-    window.alert(`Manager maili @${state.settings.companyDomain} uzantili olmalidir.`);
-    return;
-  }
 
   if (getUserByEmail(email)) {
     window.alert("Bu e-posta zaten tanimli.");
